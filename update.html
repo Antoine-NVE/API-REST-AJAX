@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modifier un membre</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="#" />
+
+  <script src="js/update.js" defer></script>
+</head>
+
+<body>
+  <h1>Modifier un membre</h1>
+  <form>
+    <div>
+      <label for="id">Id : </label>
+      <input disabled type="text" id="id" />
+    </div>
+    <div>
+      <label for="prenom">Prénom : </label>
+      <input type="text" id="prenom" name="prenom" />
+    </div>
+    <p class="erreur" id="message_prenom"></p>
+    <div>
+      <label for="nom">Nom : </label>
+      <input type="text" id="nom" name="nom" />
+    </div>
+    <p class="erreur" id="message_nom"></p>
+    <div>
+      <button type="submit" id="modifier">Modifier</button>
+      <button type="reset" id="annuler">Annuler</button>
+      <button id="retour">Retour</button>
+    </div>
+  </form>
+</body>
+
+</html>
